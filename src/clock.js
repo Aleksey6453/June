@@ -7,9 +7,20 @@ export default class Clock extends Component {
             time: new Date()
         }
     }
+
+    componentDidMount(){
+        setInterval(() => this.tick(), 1000)
+    }
+
+    tick(){
+        this.setState({
+            time: new Date()
+        })
+        
+    }
     render() {
         return (
-            <p>Clock {this.state.time.toLocaleTimeString()}</p>
+            <p>Clock is {this.state.time.toLocaleTimeString()}</p>
         )
     }
 }
