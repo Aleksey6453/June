@@ -5,11 +5,10 @@ import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">    
-        <Welcome streetName="Forester" colorName="Fucking" />
-        <Clock />
-      </header>
+    <div className="App App-header">
+      <Welcome streetName="Forester" colorName="Fucking" />
+      <Clock /> 
+      <h1>CHAT REACT</h1>
     </div>
   );
 }
